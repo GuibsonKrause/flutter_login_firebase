@@ -1,0 +1,48 @@
+# Flutter/Dart/Pub related
+**/build/
+.dart_tool/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-version
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# CMake
+CMakeLists.txt.user
+
+# Android
+android/.gradle/
+android/app/debug.keystore
+android/app/*.keystore
+android/local.properties
+android/.idea/
+
+# iOS
+ios/Pods/
+ios/Flutter/Generated.xcconfig
+ios/.symlinks/
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Runner/Flutter/Flutter.framework/
+ios/Runner/Flutter/Flutter.podspec
+ios/Runner/GoogleService-Info.plist
+
+# Credential files (Firebase)
+# These files contain project-specific secrets and should not be committed
+android/app/google-services.json
+lib/firebase_options.dart
+
+# Optional: lockfile
+pubspec.lock
