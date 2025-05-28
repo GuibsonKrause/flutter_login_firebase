@@ -4,10 +4,13 @@ class CustomTextField extends StatelessWidget {
   final String label;
   final bool obscure;
   final TextEditingController controller;
+  final String? Function(String?)? validator;  // novo
+
   const CustomTextField({
     required this.label,
     required this.controller,
     this.obscure = false,
+    this.validator,
   });
 
   @override
@@ -19,7 +22,8 @@ class CustomTextField extends StatelessWidget {
         labelText: label,
         border: OutlineInputBorder(),
       ),
-      validator: (v) => (v == null || v.isEmpty) ? 'Campo obrigatório' : null,
+      validator: validator ??
+              (v) => (v == null || v.isEmpty) ? 'Campo obrigatório' : null,
     );
   }
 }

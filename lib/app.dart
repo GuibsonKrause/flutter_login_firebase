@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
+import 'screens/sign_up_screen.dart';
 import 'screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,9 +11,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: '/login',
       routes: {
-        '/login': (_) => LoginScreen(),
-        '/home': (_) => HomeScreen(),
+        '/login' : (_) => LoginScreen(),
+        '/signup': (_) => SignUpScreen(),
+        '/home'  : (_) => HomeScreen(),
       },
     );
   }
 }
+
