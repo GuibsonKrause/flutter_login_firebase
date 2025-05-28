@@ -4,6 +4,8 @@ import '../services/auth_service.dart';
 class HomeScreen extends StatelessWidget {
   final _auth = AuthService();
 
+  HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

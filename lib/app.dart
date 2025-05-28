@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 import 'screens/sign_up_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/forgot_password_screen.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login' : (_) => LoginScreen(),
         '/signup': (_) => SignUpScreen(),
+        '/forgot': (_) => ForgotPasswordScreen(),
         '/home'  : (_) => HomeScreen(),
       },
     );

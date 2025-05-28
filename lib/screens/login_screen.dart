@@ -3,6 +3,8 @@ import '../services/auth_service.dart';
 import '../widgets/custom_text_field.dart';
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
@@ -64,6 +66,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Navigator.pushNamed(context, '/signup');
                 },
                 child: Text('Criar conta'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pushNamed(context, '/forgot'),
+                child: Text('Esqueci minha senha'),
               ),
             ],
           ),

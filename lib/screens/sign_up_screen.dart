@@ -3,6 +3,8 @@ import '../services/auth_service.dart';
 import '../widgets/custom_text_field.dart';
 
 class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
+
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
